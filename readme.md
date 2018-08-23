@@ -49,10 +49,10 @@ Make the following changes to `Make.intel64`:
 In `hpl-2.2`, compile the program by running:
 
 ```
-make arch=intel64
+make arch=intel64 -j
 ```
 
-If compilation succeeds, the directory `hpl-2.2/bin/intel64` should now exist. In it you will find the files `HPL.dat` and `xhpl`. At this point, you require only these two files; that is, you can copy and run them from anywhere.
+The -j command flag allows make to spawn as many processes as it wants.  If compilation succeeds, the directory `hpl-2.2/bin/intel64` should now exist. In it you will find the files `HPL.dat` and `xhpl`. At this point, you require only these two files; that is, you can copy and run them from anywhere.
 
 ## 3. Gathering Parameters
 
